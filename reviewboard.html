@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Web made easy</title>
+		 <meta name="viewport" content="width = device-width, initial-scale = 1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		 <link rel="stylesheet" type="text/css" href="main.css">
+		 <link rel="stylesheet" type="text/css" href="normalise.css">
+		 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+		 
+		 <!-- Adds a user-specified comment into a div, along with his/her name.-->
+		 
+         <script>
+		     $(document).on('submit', 'form', function(e) {
+		  var name = document.getElementById("this").elements[0].value;
+		  var txt = document.getElementById("this").elements[1].value;
+         
+		 if(name!=0 && txt!=0){
+		      $("#history").append('<div class="review"> Name: ' + name + " " + '<div class="review_item">Message:' + txt + '</div></div>');
+		 } else {
+		    alert("Add a message and a name, please!");
+		 }
+         
+		 return false; 
+});	
+		 </script>
+		 
+		 </head>
+<body>
+
+<!-- Adds a fixed navigation bar to the top of the page.-->
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">CSC1026</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="history.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESTS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html#cssHtmlMenu">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="reviewboard.html">REVIEW BOARD</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Adds a form where user enters his/her information and review of the website.-->
+
+ <div  class= "contain">
+    <div id="review" class="row">
+	     <div id="history1" class="col-lg-5 col-md-4 col-sm-12 col-xs-12">
+            
+                 <form id="this" name="post" method="post" action="" onsubmit="">
+                 Name: <input type="text" name="username"><br>
+                 Message:<br>
+                 <textarea id="this2" name="message" rows="10" cols="30">
+                 </textarea><br>
+                 <input class="submit" name ="addcomment" type="submit" value="SUBMIT">
+                 </form>
+          
+         </div>
+  
+             <div id="history" class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+  
+             </div>
+       </div>
+  </div>
+  
+<!-- Load up bootstrap, js file and jQuery..-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="myJs.js"></script>
+</body>
+</html>

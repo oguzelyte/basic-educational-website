@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Web made easy</title>
+		 <meta name="viewport" content="width = device-width, initial-scale = 1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		 <link rel="stylesheet" type="text/css" href="main.css">
+		 <link rel="stylesheet" type="text/css" href="normalise.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+		 <script src="myJs.js"></script>
+ 
+	 </head>
+<body>
+
+<!-- Adds a fixed navigation bar to the top of the page.-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">CSC1026</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="history.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESTS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html#cssHtmlMenu">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="reviewboard.html">REVIEW BOARD</a></li>
+	  <li><input id="readingIndex" onclick="readingIndex()" type='button' value='' /></li>
+	  <li><input id="pause" onclick="pause()" type='button' value='' /></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Useful links to user about modern web technologies.-->
+
+<div id="contain">
+     <div id="linkCarousel" class="carousel slide" data-ride="carousel">
+		    
+        	 <ol class="carousel-indicators">
+				 <li data-target="#linkCarousel" data-slide-to="0" class="active"> </li>
+				 <li data-target="#linkCarousel" data-slide-to="1"> </li>
+				 <li data-target="#linkCarousel" data-slide-to="2"> </li>
+			 </ol>
+		 
+		 
+		 <div class="carousel-inner">
+			 <div class="item active">
+			 <div class="slide1"></div>
+			 <div class="carousel-caption">
+				 <h2> 2017 Website styling trends </h2>
+				 <p>Find out how to make your website modern and desirable</p>
+				 <p><a href="https://webflow.com/blog/18-web-design-trends-for-2017" class="btn btn-primary btn-lg">Check it out</a></p>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="slide2"></div>
+			 <div class="carousel-caption">
+				 <h2> Learn how to make a website from scratch </h2>
+				 <p>Try one of Codecademy's courses</p>
+				 <p><a href="https://www.codecademy.com/learn/make-a-website" class="btn btn-primary btn-lg">Check it out</a></p>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="slide3"></div>
+			 <div class="carousel-caption">
+				 <h2> Web development tools and resources </h2>
+				 <p>Link offers you a vast array of useful libraries</p>
+				 <p><a href="https://www.keycdn.com/blog/web-development-tools/" class="btn btn-primary btn-lg">Check it out</a></p>
+			 </div>
+			 </div>
+		 </div> 
+			 <a class="left carousel-control" href="#linkCarousel" data-slide="prev">
+			 <span class="glyphicon glyphicon-chevron-left"> </span>
+			 </a>
+			 <a class="right carousel-control" href="#linkCarousel" data-slide="next">
+			 <span class="glyphicon glyphicon-chevron-right"></span>
+			 </a>
+		 </div>
+</div>	 
+
+<!-- Section explaining what the page is about.-->	 
+	 
+	     <div id="rewind" class="header">
+	         <h1> CSC1026 REWIND </h1>
+			 <span> <em> A useful guide to thorough module revision and more. </em></span>
+	     </div>
+		 
+	     <div class= "contain">
+		     <div id="indexRow" class="row">
+			     <div id="history" class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				     <h4>HISTORY</h4>
+					 <img src="icons/history.png" align="left" class="img-responsive">
+				     Learn about the web ant how the internet came to be.
+					 Course includes the overview of internet growth, its
+					 future, goes in-depth about what internet looks like. 
+					 Offers an overview of web architecture.
+			     </div>
+		
+			     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				     <h4>PRESENTATION KEY PRINCIPLES</h4>
+					 <img src="icons/design.png" align="left" class="img-responsive">
+				     Learn about how to write well-structured websites and not to
+					 confuse the user (and yourself all the same). Find out about 
+					 <em>HTML</em> type discrepancies, paragraphing, tagging rules
+					 and also the newest design trends.
+			     </div>
+			
+			     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				     <h4>CSS/HTML</h4>
+					 <img src="icons/css.png" align="left" class="img-responsive">
+				     This section combines both: the HTML and its design partner. You
+					 will learn how to segregate the both and yet make them work together.
+					 It will include information on validation, CSS selectors and more
+					 of the sort.
+			     </div>
+			 	 
+				 <div class="clearfix visible-xs"> </div>
+				 
+			     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				     <h4>JAVASCRIPT</h4>
+					 <img src="icons/javascript.png" align="left" class="img-responsive">
+				     This section will show how to handle various events, such as form
+					 submission. It'll run over how <em> JavaScript </em> differs from
+					 <em> PHP </em> and despite lacking <em> PHP's </em> benefits
+					 can still be made use of. Introduction to
+					 <em> bootstrap </em> is also to be expected.
+			     </div>
+		 
+		     </div>
+	     </div>
+
+<!-- Load bootstrap, js and jquery.-->		 
+	 
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="myJs.js"></script>
+	
+</body>
+</html>

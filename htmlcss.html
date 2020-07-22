@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Web made easy</title>
+		 <meta name="viewport" content="width = device-width, initial-scale = 1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		 <link rel="stylesheet" type="text/css" href="main.css">
+		 <link rel="stylesheet" type="text/css" href="normalise.css">
+		 <script src="artyom.min.js"></script>
+		 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+          <script src="myJs.js"></script>
+		
+	 </head>
+<body>
+
+<!--Fixed navigation bar on top of the page.-->
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">CSC1026</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="history.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html#cssHtmlMenu">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESTS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="#">REVIEW BOARD</a></li>
+	  <li><input id="readingCss" onclick="readingCss()" type='button' value='' /></li>
+	  <li><input id="pause" onclick="pause()" type='button' value='' /></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Main picture and quote on it.-->
+
+<div id="internetContainer">
+  <img id="internet" class="img-responsive" src="imgs/html.jpg">
+
+  <blockquote id="petroski" class="blockquote">
+    <p class="mb-0">Everything we do is designed, whether we're producing
+	a magazine, a website, or a bridge. Design is really the creative
+	invention that designs everything.</p>
+    <footer class="blockquote-footer"> Henry Petroski</footer>
+  </blockquote>
+</div>
+
+<!--Page custom navigation bar leading to tests and last lesson.-->
+
+<nav id="historyNav" class="navbar navbar-default" role="navigation2">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> TESTS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html#cssHtmlMenu">TEST 1</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson2css">LAST LESSON </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Lessons.-->
+
+  <div id="lessons">
+    <h2>LESSONS</h2>      
+  </div>
+
+  <div class="container">  
+    <div id="htmlLessons">
+	
+	<!--Lesson list taking to the separate lesson sections.-->
+	
+     <a href="#lesson-1"> <div id="lesson1"> <h2> LESSON 1 </h2> </div> </a>
+     <a href="#lesson-2"> <div id="lesson2"> <h2> LESSON 2 </h2> </div> </a>
+    </div>
+  </div>
+      
+	  <!--Lesson 1.-->
+  <div id="lesson1css">
+    <h2 id="lesson-1">LESSON 1</h2>      
+  </div>
+  
+  <!--HTML and how it's constructed.-->
+  
+  <div class="container-fluid">
+   <div class="row">
+      <div id="web-lesson" class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+         
+            <h2> <em> HTML </em> and its structure </h2>
+               <p>  
+	             The structure of HTML is a mandatory requirement since you don't have
+				 that much control as you would have compared with printed material. It
+				 is necessary to keep a good style, because it helps various browsers
+				 render it consistently, users can fully exploit your website, editing
+				 and maintaining is easier for you and your coding team (assuming you have one).
+				 Page authors get full access to the style sheet and various scripting features.
+	          </p>
+			
+			<!--Web page specifications.-->
+			 
+			  <h2> <em> Web page</em> specifications</h2>
+	          <p>
+			     All of the specs are provided by the W3C (the page also has very
+				 nicely commented code snippets teaching you the ropes and more). 
+				 W3C publishes DTDs for each version of HTML they release, it shortly
+				 tells which tags can be used, where they are allowed to appear and what
+				 they can hold inside themselves. The DTD also tells how web browsers
+				 are supposed to render its code.
+	  
+	          </p>
+       
+	   </div>
+	   
+<!--YouTube video.-->
+	    
+		<div id="blumDiv" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+   
+        <h3> <em> Margaret talks how website design is made and how it affects the many </em> </h3>
+          <div class="embed-responsive embed-responsive-16by9">
+             <iframe width="560" height="315" src="https://www.youtube.com/embed/quJdL9ggETI" frameborder="0" allowfullscreen></iframe>
+		</iframe>
+          </div>
+      </div>
+	   
+    </div> 
+	</div>
+	
+	<div id="blum" class="row">
+     
+    </div>
+	
+<!--What does an HTML document consist of.-->
+	
+	<div class="row">
+	     <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"> </div>
+	     <div id="leeread" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+             <blockquote id="lee" class="blockquote">
+                <p class="mb-0"> An HTML document is composed of three parts:
+				<ul>
+				<li>A line containing HTML version information</li>
+				<li>A declarative header section (delimited by the &lt;head&gt; element)</li>
+				<li>A body, which contains the document's actual
+content, implemented by the &lt;body&gt; element.</li>
+				</ul>
+ </p>
+    <footer class="blockquote-footer"> <a href="http://www.w3.org/TR/html401/struct/global.html">W3C</a> </footer>
+               </blockquote>
+	     </div>
+		 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"> </div>
+    </div>
+
+<!--Expand on HTML's sections.-->
+	
+	<div class="row">
+	    
+	     <div id ="2ndpar" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+             
+			     <h2 id="Memex"> The declarative <em> header</em> section </h2>
+				 
+                <p id="memex"> In here you load up your custom cascading style sheets
+				and other links you wish to add, for example: jQuery, bootstrap libraries
+				are a few. You include the script libraries using the &lt;script&gt; tag, 
+                stylesheets, however, use the &lt;style&gt; tags or, alternatively,
+                 &lt;link&gt; tags. You are absolutely <em>NOT</em> allowed to put any other
+                content in here.</p>
+    
+             
+	     </div>
+		 <div id ="3rdpar" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+             
+			     <h2 id="Memex"> The document's <em> body</em> </h2>
+				 
+                <p id="memex"> In here all of the content the user is subjected
+				to is visible. You are free to use (and very much so, advised to use)
+				various structure tags that <em> HTML </em> possesses. More advanced
+				web developers use <em>JavaScript</em> in order to display or get
+				some content from the page. The appearance of body's content can be
+				influenced by the information given in the &lt;head&gt;. </p>
+    
+             
+	     </div>
+		 <div id="memexImg" class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+		       <div>
+			    <img class="img-responsive" src="imgs/htmlpage.png"></div>
+		 </div>
+    </div>
+
+<!--Tag examples.-->
+	
+	<div id="table" class="container">
+	     <table class="table table-hover">
+		     <thead>
+			     <tr>
+				     <th> <em>TAG</em> EXAMPLES</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+			     <tr>
+				     <td class="expand">&lt;a&gt;
+					 <span class="tooltiptext">Encloses text in a link. </span> 
+					 </td>
+				 </tr>
+				 <tr >				 
+				     <td class="expand">&lt;strong&gt;
+					 <span class="tooltiptext">Makes text bold. </span> 
+					 </td>				
+				 </tr>
+				 <tr > 				          				 
+					 <td class="expand">&lt;blockquote&gt;
+
+<span class="tooltiptext">Wraps the text into a quote. </span>  
+                     </td>
+				 </tr>
+				 <tr>
+				     <td class="expand">&lt;div&gt;
+					 <span class="tooltiptext">Extremely useful. Adds your content
+into a box that you can easily customise.</span> 
+					 </td>					 
+				 </tr>
+				 <tr>
+				     <td class="expand">&lt;form&gt;
+					 <span class="tooltiptext">Form component to access user
+input information. </span> 
+					 </td>
+					 
+				 </tr>
+				 <tr>
+				     <td class="expand">&lt;hr&gt;
+					 <span class="tooltiptext">Adds a long line to separate
+content. </span> 
+					 </td>
+					
+				 </tr>
+				 <tr>
+				     <td class="expand">&lt;img&gt;
+					 <span class="tooltiptext">Adds an image to the page. </span> </td>
+					
+				 </tr>
+				 <tr>
+				     
+					 <td class="expand">&lt;p&gt;
+					 <span class="tooltiptext">Extremely useful. Just like div adds
+text into a box, although this is only for text paragraphs. </span> </td>
+				 </tr>
+				 <tr>				     
+					 <td class="expand">&lt;ul&gt;
+					 <span class="tooltiptext">Adds a bullet-list.</span> 
+					 </td>
+				 </tr>
+				 
+				 
+			 </tbody>
+		 </table>
+	</div>  
+
+<!--Tag types.-->
+    
+	 <div id="table-explanation1" class="row">
+	    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+	     <div id="table-explanation-part" class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            <h2> Tags </h2>
+			<ul>
+			    <li>Most commonly wrapped around in pairs, like so &lt;p&gt; ... &lt;/p&gt;.</li>
+				<li>Some are just self-closing, because they have no contnet inside: &lt;br /&gt;, &lt;hr /&gt;.</li>
+				<li>Some tags can be nested within each other, like so: &lt;p&gt;... &lt;em&gt;...&lt;/em&gt; &lt;/p&gt;.</li>
+			</ul>			
+	     </div>
+		 <div  class="col-lg-5 col-md-12 col-sm-12 col-xs-12"> 
+		     <h2> Common attributes </h2>
+		     <ul>
+			     <li>Class (used for many identical elements, to which you apply the same style)</li>
+				 <li>ID (an unique element, one of a kind)</li>
+				 <li>Style (provides inline CSS style rules)</li>
+				 <li>Title (describes an element and its content, creates tooltips)</li>
+             </ul>			 
+		 </div>
+		 <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+    </div>
+
+<!--Lesson 2.-->
+	
+	<div id="lesson2css">
+    <h2 id="lesson-2">LESSON 2</h2>      
+    </div>
+
+<!--Body tags.-->
+	
+	  <div id="table-explanation" class="row">
+	    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+	     <div id="table-explanation-one" class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+		     <h2> <em>Body tags</em> </h2>
+             <ul class="webnow" style="list-style-type:circle">
+                <li><strong>Block-level</strong> 
+				     <ul class="second-level-list">
+					     <li>Define <em> blocks </em> of content</li>
+						 <li>Browser adds a line above and below</li>
+						 <li>Default width and heigth</li>
+					 </ul>
+				</li>
+                <li><strong>Inline</strong>
+				      <ul  class="second-level-list">
+				         <li>Does not add new lines</li>
+						 <li>Must be inside a block element</li>
+						 <li>Adopts the semantics of tjhe block-element it is in</li>
+				      </ul>
+                </li>
+                <li><strong>Replaced</strong>
+				      <ul  class="second-level-list">
+					      <li>Has to be nested as an inline tag</li>
+						  <li>Used for specific elements, such as <em> images </em> or
+						  <em> form controls </em></li>
+						  <li>Browser calculates dimensions and replaces by usually 
+						  embedded objects</li>
+					      
+					  </ul>
+				</li>
+
+<!--Expand on block-level tags.-->
+				
+             </ul>         
+	     </div>
+		 <div id="table-explanation-two" class="col-lg-5 col-md-12 col-sm-12 col-xs-12"> 
+		     <h2> <em>Block-level</em> tags</h2>
+			 <ul class="webnow" style="list-style-type:circle">
+                <li><strong>Used for the basic structure of the web page</strong> 
+				</li>
+                <li><strong>Text structure</strong><br>
+				      <ul  class="second-level-list">
+				         <li>Headings</li>
+						 <li>Paragraphs</li>
+						 <li>Horizontal rules</li>
+				      </ul>
+                </li>
+                <li><strong>Tables</strong>
+				      <ul  class="second-level-list">
+					      <li>To present data accurately</li>
+					      <li>Can be used for (not advised) to layout content (rather use Bootstrap or such)</li>					  
+					  </ul>
+				</li>
+
+             </ul>         
+		     
+		 </div>
+		 <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+    </div>
+
+	<!--Visual examples how to add some things on an HTML page.-->	
+	
+	<div id="interneth2" class="row">
+	     <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+		     <h1> <em>Adding stuff onto the page</em> </h1>
+
+	     </div>
+    </div>
+	
+	<div  id="3rdpar" class="row">
+	     <div  class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+		  <div class="internetscroll">
+              <h3> Adding inline tags </h3>
+			  <img class="img-responsive" src="imgs/link.jpg">
+	             
+          </div>   
+		 </div>
+	     
+		 <div class="col-lg-4 col-md-0 col-sm-0 col-xs-0">
+		  <div class="internetscroll">
+	         <h3>Adding a link</h3>
+	            <img class="img-responsive" src="imgs/inline.jpg">
+            </div>  
+	
+	     </div> 
+		 
+		
+		 <div  class="col-lg-4 col-md-0 col-sm-0 col-xs-0">
+		 <div class="internetscroll">
+	           <h3>Adding a table</h3>
+			   <img class="img-responsive" src="imgs/table.jpg">
+			    
+              
+	     </div>
+	     </div> 
+
+    </div>
+	
+<!--Script fixing "Lesson 1" or "Lesson 2" onto the page depending on how much user scrolled down.-->
+	
+      <script> 
+	  
+		 
+		 var internetScroll = $('#table-explanation').offset().top; 
+		 window.addEventListener("scroll",function() { 
+         if(window.scrollY > internetScroll-1000) {
+         $('#table-explanation').slideDown(1500);
+         }
+         else {
+         $('#table-explanation').slideUp(1000);
+         }
+        },false);
+		
+		
+	  var fixLesson1 = $('#lesson1css').offset().top; 
+	  var fixLesson2 = $('#lesson2css').offset().top; 
+	 
+         // get initial position of the element
+         var x=0;
+		 var y=0;
+         $(window).scroll(function() {                  // assign scroll event listener
+            
+            var currentScroll = $(window).scrollTop(); // get current position
+            if (currentScroll >= fixLesson1 && currentScroll < fixLesson2) {
+				// apply position: fixed if you
+                 $('#lesson1css').css({ 			 // scroll to that element or below it
+                 position: 'fixed',
+                 top: '50px',
+                 left: '0',
+				'box-shadow': '0px 10px 10px #888',
+                '-moz-box-shadow' : '0px 10px 10px #888',
+                '-webkit-box-shadow' : '0px 10px 10px #888'
+
+                 				 
+             });
+			 y=1;
+			 if(x==1) {
+			    $('#lesson2css').css({                      // if you scroll above it
+                position: 'static',
+				'box-shadow': 'none',
+                '-moz-box-shadow' : 'none',
+                '-webkit-box-shadow' : 'none'
+                });
+				x=0;
+			 }
+			 
+            } 
+			
+			if(currentScroll < fixLesson1){
+			     $('#lesson1css').css({                      // if you scroll above it
+                  position: 'static',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });
+				 
+				 $('#lesson2css').css({                      // if you scroll above it
+                  position: 'static',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });				
+			
+			}
+		
+			if(currentScroll >= fixLesson2){                                   // apply position: static
+                 if(y==1) {
+				  $('#lesson1css').css({                      // if you scroll above it
+                  position: 'static',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });
+				 y=0;
+				 }
+				
+                      // apply position: fixed if you
+				 
+				 $('#lesson2css').css({                      // scroll to that element or below it
+                 position: 'fixed',
+                 top: '50px',
+                 left: '0',
+				 'box-shadow': '0px 10px 10px #888',
+                 '-moz-box-shadow' : '0px 10px 10px #888',
+                 '-webkit-box-shadow' : '0px 10px 10px #888'
+                });
+				x=1;
+			  
+            }
+            
+           
+});
+	  </script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Web made easy</title>
+		 <meta name="viewport" content="width = device-width, initial-scale = 1">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		
+		 <link rel="stylesheet" type="text/css" href="main.css">
+		 <link rel="stylesheet" type="text/css" href="normalise.css">
+		
+     
+		
+	 </head>
+<body>
+
+<!-- Adds a fixed navigation bar to the top of the page.-->
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">CSC1026</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="history.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESTS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html#cssHtmlMenu">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="reviewboard.html">REVIEW BOARD</a></li>
+	  <li><input id="reading" onclick="reading()" type='button' value='' /></li>
+	  <li><input id="pause" onclick="pause()" type='button' value='' /></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Adds the main view picture.-->
+
+<div id="internetContainer">
+  <img id="internet" class="img-responsive" src="imgs/internet.jpg">
+
+<!-- Adds a quote on the main picture.-->
+
+  <blockquote id="schmidt" class="blockquote">
+    <p class="mb-0">The Internet is the first thing that humanity has built that humanity doesn't understand, the largest
+    experiment in anarchy that we have ever had.</p>
+    <footer class="blockquote-footer"> Eric Schmidt</footer>
+  </blockquote>
+</div>
+
+<!-- Adds a custom page menu of a test list and going to bottom of page.-->
+
+<nav id="historyNav" class="navbar navbar-default" role="navigation2">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> TESTS<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="tests.html#history-test1">TEST 1</a></li>
+          <li><a href="tests.html#history-test2">TEST 2</a></li>
+        </ul>
+      </li>
+      <li><a href="#lesson3menu">LAST LESSON </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div id="lessons">
+    <h2>LESSONS</h2>      
+  </div>
+
+  <!-- Buttons linking to all of the tests.-->
+  
+  <div class="container">  
+    <div id="historyLessons">
+     <a href="#lesson-1"> <div id="lesson1"> <h2> LESSON 1 </h2> </div> </a>
+     <a href="#lesson-2"> <div id="lesson2"> <h2> LESSON 2 </h2> </div> </a>
+     <a href="#lesson3menu"> <div id="lesson3"> <h2> LESSON 3 </h2> </div> </a>
+    </div>
+  </div>
+      
+  <div id="lesson1menu">
+    <h2 id="lesson-1">LESSON 1</h2>      
+  </div>
+  
+  <!-- First paragraph.-->
+  
+  <div class="container-fluid">
+   <div class="row">
+      <div id="web-lesson" class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+         
+            <h2> <em> Net </em> and the <em> Web</em> </h2>
+               <p>  
+	    <em> Net</em> is a <em>network of networks</em>. It is well explained with an allegory 
+		of sending <em>packets</em> of information. As a packet is like a postcard with an 
+		address on it, given to another computer <em>receiver</em>, which is also connected 
+		as a part of the <em>Net</em>, each computer is capable of figuring out which cable should
+		be used in order for the packet to reach its destination. That's the Internet's primary usage. 
+		Notable is that it operates at extraordinary speeds, delivering these packets well under a 
+		second.
+	          </p>
+	          <p>
+	   <em>The Web</em>, however, is an abstract notion of an inanimate space, 
+	   which holds information. If <em>Net</em> consists of painstakingly wired computers, 
+	   <em>Web</em> holds documents, sounds, videos - entertainment! The cable connections 
+	   are replaced with hypertext links. This inanimate space only exists because
+	   of their <em>Net</em> parents who communicate between numerous cables. 
+	          </p>
+       
+	   </div>
+
+<!-- YouTube video link.-->
+
+		<div id="blumDiv" class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+   
+        <h3> <em> Blum on the Internet </em> </h3>
+          <div class="embed-responsive embed-responsive-16by9">
+             <iframe width="560" height="200" src="https://www.youtube.com/embed/XE_FPEFpHt4" frameborder="0" allowfullscreen>
+		</iframe>
+          </div>
+      </div>
+	   
+    </div> 
+	</div>
+	
+	<div id="blum" class="row">
+     
+    </div>
+
+<!-- Lee quote.-->
+	
+	<div class="row">
+	     <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"> </div>
+	     <div id="leeread" class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+             <blockquote id="lee" class="blockquote">
+                <p class="mb-0"> We should all learn to be information smart: to 
+	understand when a Web site, or a piece of software, or an Internet 
+	Service provider plan, is giving us biased information. We should learn to distinguish 
+	quality information and quality links. As technology evolves, and machine-understandable 
+	information on the Web becomes available, we should be aware of the sudden changes which 
+	large-scale machine processing might have on our businesses.</p>
+    <footer class="blockquote-footer"> Tim Berners-Lee </footer>
+               </blockquote>
+	     </div>
+		 <div class="col-lg-1 col-md-1 col-sm-0 col-xs-0"> </div>
+    </div>
+
+	<!-- The memex machine paragraph.-->
+	
+	<div class="row">
+	    
+	     <div id ="2ndpar" class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+             
+			     <h2 id="Memex"> The<em> Memex</em> machine, <em>World Wide Web</em> prototype </h2>
+				 
+                <p id="memex">Some of the first trials at creating somewhat of an Internet prototype 
+				was a Memex machine created by Vannevar Bush in 1945. It was described as a 
+				device in which various books, records, communications and so on would be stored, 
+				"mechanized so that it may be consulted with exceeding speed and flexibility". To 
+				illustrate this we can imagine lists of static microfilm pages. However, this ingenious
+				innovation lacked an actual hypertext system that would link pages together, therefore 
+				one could look at multiple images for a long while eventually realising he/she wasn't 
+				looking at the right sheet all along.</p>
+    
+             
+	     </div>
+		 <div id="memexImg" class="col-lg-4 col-md-0 col-sm-0 col-xs-0"> 
+		       <div><img src="imgs/Memex.jpg" alt=""></div>
+		 </div>
+    </div>
+	
+	<!-- A table of events and dates.-->
+	
+	<div id="table" class="container">
+	     <table class="table table-hover">
+		     <thead>
+			     <tr>
+				     <th> <em>Date</em> </th>
+					 <th> <em>Event</em> </th>
+				 </tr>
+			 </thead>
+			 <tbody>
+			     <tr>
+				     <td>1930s</td>
+					 <td>Vannevar Bush proposes the Memex hypertext device</td>
+				 </tr>
+				 <tr >
+				 
+				     <td>1960s</td>
+					 <td class="expand">ARPANET is born
+					 
+					 <span class="tooltiptext">Internet was a reserve of academic institutions back in the days, 
+				 ARPANET created for defensive purposes. Over years, industry research centres did join the Internet chain 
+				 and everything boomed from there.</span>
+				 
+					 </td>
+				 </tr>
+                 </span>
+				 <tr > 
+				          				 
+				     <td>1984</td>
+					 <td class="expand">Domain Name System (DNS) introduced <br>
+JANET connects UK universities to Internet 
+
+<span class="tooltiptext">DNS - the means of discovering different machines.
+JANET - big fat pipe a lot of universities sit on. </span>  
+                     </td>
+				 </tr>
+				 <tr>
+				     <td>1988</td>
+					 <td>First Internet worm affects 6,000 of 60,000 hosts</td>
+				 </tr>
+				 <tr>
+				     <td>1990</td>
+					 <td>Tim Berners-Lee writes "WorldWideWeb" </td>
+				 </tr>
+				 <tr>
+				     <td>1992</td>
+					 <td>26 HTTP servers</td>
+				 </tr>
+				 <tr>
+				     <td>1993</td>
+					 <td>CERN declare WWW technology free to use with no fees</td>
+				 </tr>
+				 <tr>
+				     <td>1995</td>
+					 <td>WWW overtakes FTP as No 1 internet service Amazon and eBay launch</td>
+				 </tr>
+				 <tr>
+				     <td>1996</td>
+					 <td>"Browser wars" begin between Microsoft and Netscape</td>
+				 </tr>
+				 
+				 
+			 </tbody>
+		 </table>
+	</div>  
+     
+	 <!-- Paragraphs following table.-->
+	 
+	 <div id="table-explanation" class="row">
+	    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+	     <div id="table-explanation-part" class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+            Tim Berners Lee was the first one to propose the idea of a <em>WorldWideWeb</em> 
+			that had quite a bit of similarities with what we all use today. The application
+			was called a 'hypertext browser/editor', that allows one to read information from local files 
+			and remote servers. It allows searches, link clicks, file, and article accessing.
+			It was copyright of CERN and free to collaborating institutes, which helped it spread. <br>
+           <a href="https://www.w3.org/">Home of the web</a>      
+	     </div>
+		 <div  class="col-lg-5 col-md-12 col-sm-12 col-xs-12"> 
+		     <em>Browser wars.</em> <em>Netscape</em> and <em>Microsoft</em> were about commercialising Lee's idea, 
+			 slightly different concept from the original Tim Burners-Lee's. They took the web 
+			 that Lee invented and worked on it. Thus, websites started rendering one way in 
+			 one browser and another way in another.   
+		 </div>
+		 <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+    </div>
+
+<!-- Lesson 2.-->
+	
+	<div id="lesson2menu">
+    <h2 id="lesson-2">LESSON 2</h2>      
+    </div>
+
+<!-- Comparison between web then and now.-->
+	
+	  <div id="table-explanation" class="row">
+	    <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+	     <div id="table-explanation-one" class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+		     <h2> <em>Web nowadays</em> </h2>
+             <ul class="webnow" style="list-style-type:circle">
+                <li><strong>Academic/scientific web</strong> 
+				     <ul class="second-level-list">
+					     <li>Research centres</li>
+						 <li>Universities (<em>JANET</em>, <em>ARFANET</em> are ancestors of these)</li>
+					 </ul>
+				</li>
+                <li><strong>Commercial web</strong>
+				      <ul  class="second-level-list">
+				         <li>Business to consumer - <em>Amazon</em></li>
+						 <li>Consumer to consumer - <em>Ebay</em></li>
+						 <li>Business to business data exchange and services</li>
+				      </ul>
+                </li>
+                <li><strong>Social web</strong>
+				      <ul  class="second-level-list">
+					      <li>Blogs</li>
+					      <li>Facebook</li>
+					      <li>Wikipedia</li>
+					      <li>Twitter</li>
+					      <li>Instagram</li>
+					  </ul>
+				</li>
+				<li><strong>The creative web</strong>
+				      <ul  class="second-level-list">
+					     <li>Mashups</li>
+						 <li>Open APIs </li>
+						     <ul>
+							     <li><a href="https://research.ncl.ac.uk/urbanobservatory/">Urban observatory Newcastle  </a></li>
+							 </ul>
+						 <li>Free(er) access to data </li>
+					  </ul>
+				</li>
+             </ul>         
+	     </div>
+		 <div id="table-explanation-two" class="col-lg-5 col-md-12 col-sm-12 col-xs-12"> 
+		     <h2> <em>Future of the Web</em> </h2>
+			 <ul class="webnow" style="list-style-type:circle">
+                <li><strong>Barriers for change</strong> 
+				     <ul class="second-level-list">
+					     <li>Virtually no barrier to new devices to connect</li>
+						 <li>Low barrier for new applications to run</li>
+						 <li>Increasingly high barrier to infrastructure changes</li>
+					 </ul>
+				</li>
+                <li><strong>Semantic web</strong><br>
+				Humans accessing the data but robots reaching out to bring information in a structured way.<br>
+				Enclosing private information in tags and getting the machine to recognise it.
+				      <ul  class="second-level-list">
+				         <li>Simplified meta information systems and smart agents</li>
+						 <li>XML, RDFa and microformats</li>
+				      </ul>
+                </li>
+                <li><strong>The web as a service cloud computing</strong>
+				      <ul  class="second-level-list">
+					      <li>Infrastructure</li>
+					      <li>Platforms</li>
+					      <li>Software/Applications
+						     <ul>
+							     <li>Amazon WS</li>
+								 <li>Google AppEngine</li>
+								 <li>Google Apps</li>
+							 </ul>
+						  </li>
+					  </ul>
+				</li>
+
+             </ul>         
+		     
+		 </div>
+		 <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+    </div>
+
+<!-- What the internet and a web request consist of.-->
+	
+	<div id="interneth2" class="row">
+	     <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+		     <h1> <em>INTERNET</em> </h1>
+	     </div>
+    </div>
+	
+	<div  id="3rdpar" class="row">
+	     <div  class="col-lg-4 col-md-12 col-sm-12 col-xs-12"> 
+		  <div class="internetscroll">
+              <p class="internetblocks">Networking infrastructure that allows hardware devices to physically 
+			  connect to one another</p>
+	             <ul class="internetblocks">
+	                 <li>Servers, Desktop PCs, Mobile devices etc.</li>
+		             <li>Based on common standards – notably the TCP/IP protocol suite.</li>
+	             </ul>	
+          </div>   
+		 </div>
+
+<!-- Duty of protocols.-->
+	     
+		 <div class="col-lg-4 col-md-0 col-sm-0 col-xs-0">
+		  <div class="internetscroll">
+	          <p class="internetblocks"> Protocols specify how the transactions are carried out</p>
+	             <ul class="internetblocks">
+	                 <li>How communication is initiated and maintained</li>
+		             <li>Type, size and structure of the data sent/received</li>
+					 <li>Enable the services running over the internet (<em>the Web</em> is just one!)</li>
+	             </ul>	
+            </div>  
+	
+	     </div> 
+		 
+		
+		 <div  class="col-lg-4 col-md-0 col-sm-0 col-xs-0">
+		 <div class="internetscroll">
+	          <p  class="internetblocks"> Software clients (and servers) allow users and devices to access and use internet services
+	           </p>
+			     <ul class="internetblocks">
+	                 <li>Using centralised servers or distributed peer-to-peer systems 
+					 (where the wall between client and server is blurred)</li>
+	             </ul>	
+              
+	     </div>
+	     </div> 
+
+    </div>
+
+	<!-- 60 Hudson street slideshow.-->
+	
+	 <div class="container">
+	 <div id="60hudsonCarousel"  class="carousel slide" data-ride="carousel">
+	      <ol class="carousel-indicators">
+				 <li data-target="#60hudsonCarousel" data-slide-to="0" class="active"> </li>
+				 <li data-target="#60hudsonCarousel" data-slide-to="1"> </li>
+				 <li data-target="#60hudsonCarousel" data-slide-to="2"> </li>
+				 <li data-target="#60hudsonCarousel" data-slide-to="3"> </li>
+				 <li data-target="#60hudsonCarousel" data-slide-to="4"> </li>
+			 </ol>
+			 
+			 <div class="carousel-inner">
+			 <div class="item active">
+			 <div class="hudsonSlide1"></div>
+			 <div class="carousel-caption">
+				 <h3> The rooms of 60 Hudson street skyscrapers have
+				      biometric security and host many of the world's most
+					  popular websites.
+				 </h3>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="hudsonSlide2"></div>
+			 <div class="carousel-caption">
+				 <h3> Skyscraper of 60 Hudson is one of the biggest 'switch'
+				 points in the world, connecting the whole of US.
+				 </h3>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="hudsonSlide3"></div>
+			 <div class="carousel-caption">
+				 <h3> Biggest networking and telecommunication
+				 sites one next to another: 60 Hudson street and
+				 32 Avenue of the Americas in Lower Manhattan.
+				 </h3>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="hudsonSlide4"></div>
+			 <div class="carousel-caption">
+				 <h3>
+				 Building initially made for telephone service.
+				 </h3>
+			 </div>
+			 </div>
+			 
+			 <div class="item">
+			 <div class="hudsonSlide5"></div>
+			 <div class="carousel-caption">
+				 <h3> Buildings even included dorms for their
+				 workers.</h3>
+			 </div>
+			 </div>
+		 </div> 
+			 <a class="left carousel-control" href="#60hudsonCarousel" data-slide="prev">
+			 <span class="glyphicon glyphicon-chevron-left"> </span>
+			 </a>
+			 <a class="right carousel-control" href="#60hudsonCarousel" data-slide="next">
+			 <span class="glyphicon glyphicon-chevron-right"></span>
+			 </a>
+		 </div>
+	 
+	 </div>
+	
+	<div  class="row">
+	     <div  id="4thpar" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	         <h1> <em> 60 hudson </em> street</em> </h1>
+	     </div>
+	 </div>
+	 
+	 <div id="5thpar" class="row">
+	 <div  class="col-lg-1 col-md-0 col-sm-0 col-xs-0"> </div>
+	     <div id="hudstr" class="col-lg-10 col-md-12 col-sm-12 col-xs-12"> 
+	 <p><em>60 hudson street</em> was operated by <em>Western Union</em> (financial organisation).
+	 The networking there is huge because of close proximity to wallstreet. 
+	 They are using algorithmic trading working at millisecond transaction speeds 
+	 that is rapidly replacing the wallstreet guys, except it tends to go wrong, and
+	 when it does, it goes badly. Company called <em>Knight Capital</em> managed to lose that way about 
+	 <em>440 million dollars</em> in a half an hour Instead of buy low sell high their algorithm was doing 
+	 the opposite because of a glitch and the guys that had programmed it did not know how to turn it off safely. </p>
+	     </div>
+		 <div  class="col-lg-1 col-md-0 col-sm-0 col-xs-0"> </div>
+	</div>
+	
+	<div id="60block">
+	<div class="row">
+	<div  class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
+	<div  class="col-lg-7 col-md-10 col-sm-10 col-xs-10">
+	          <blockquote class="blockquote">
+                  <p  class="mb-0">People are putting their cables next to 60 Hudson just 
+				  because of the rapid connectivity. 60 Hudson is also the home to 12 other big cables that go under the ocean.</p>
+              </blockquote>
+	      </div>
+	<div  class="col-lg-3 col-md-1 col-sm-1 col-xs-1"></div>
+	</div>
+	</div>
+
+<!-- Lesson 3-->
+	
+	 <div id="lesson3menu">
+     <h2 id="lesson-3">LESSON 3</h2>      
+     </div>
+	 
+	 <div  class="row">
+	     <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	         <h2 id= "protocol"> <em> PROTOCOLS </em> </h2>
+	     </div>
+	 </div>
+
+<!-- Usage of protocols.-->
+	 
+	 <div id="protocols" class="row">
+	 <div  class="col-lg-1 col-md-0 col-sm-0 col-xs-0"> </div>
+	     <div  class="col-lg-6 col-md-12 col-sm-12 col-xs-12"> 
+	        <span> Clients and servers typically use a combination (stack) of protocols to provide specific services
+			 </span>
+			 <ul>
+			    <li>Web access</li>
+			    <li>Email</li>
+			    <li>File transfer</li>
+			    <li>Peer-to-peer data exchange</li>
+			    <li>Chat/instant messaging</li>
+			    <li>Shell/console access to computers</li>
+			 </ul>
+			<span> Most common protocols in use today are those associated with web and email services</span>
+			<ul>
+			    <li><em>HTTP/HTTPS, SMTP/IMAP/POP etc.</em></li>
+			</ul>
+	     </div>
+		 
+		 <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+		     <img class="img-responsive" src="imgs/protocol.gif">
+		 </div>
+		 <div  class="col-lg-1 col-md-0 col-sm-0 col-xs-0"> </div>
+	 </div>
+	 
+	 <div id="sshcmds">
+	     <div class="row">
+	         <div  class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
+	             <div id="par6th"" class="col-lg-7 col-md-10 col-sm-10 col-xs-10">
+	                 <blockquote class="blockquote">
+                         <p  class="mb-0"><em>SSH</em> – the way of sending commands to a remote server.
+	 Useful for being able to deploy websites, interact with web services or other remote resources.</p>
+                     </blockquote>
+	             </div>
+           	 <div  class="col-lg-3 col-md-1 col-sm-1 col-xs-1"></div>
+	     </div>
+	</div>
+
+	<!-- The TCP and IP.-->
+	
+	<div  id="7thpar" class="row">
+	     <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	         <h2 id= "protocol"> <em>TCP/IP:</em> The heart of the Internet</h2>
+	     </div>
+	 </div>
+	 
+	 
+	     <div id="tcp" class="row">
+	         <div  class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+			 <h3>TCP (Transmission Control Protocol) </h3>
+			 Direct connection between client and a server, takes a message (give me a homepage), 
+			 breaks it into smaller chunks, which can be sent to the <em>IP</em> protocol. At the receiving end
+			 <em>TCP</em> is responsible for taking care of these chunks and reassemble them so the application 
+			 running them knows what to do with them.
+
+			 </div>
+	            	             
+           	 <div  class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+			 <h3>IP (Internet Protocol)</h3>
+			 Responsibility of taking packets and getting them to the destination,
+			 does not concern itself with how the packets are constructed, but only how 
+			 to get them where needed. Also gives machines on the internet unique addresses. <em>IP</em>
+			 addresses point to servers, individual machines.
+			 </div>
+
+<!-- And packets.-->
+			 
+		 <div  class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+		 <h3> Packets </H3>
+			     <ul>
+			         <li>Header (addressing/sequencing information and metadata)</li>
+					 <li>Body (actual data payload)</li>
+			     </ul>
+			 </div>
+		 
+		 </div>
+
+<!-- IP routing is connection-less.-->
+		 
+     	  <div id="routing" class="container">
+		     <blockquote  class="blockquote">
+                 <p class="mb-0"> <em>IP</em> routing is <em>connection-less</em>. If you're sending a large request, 
+			transmitting would take 30 seconds. <em>IP</em> makes it unnecessary to have a stable connection for the whole 30 seconds. 
+            Liberates us a bit as well to take multiple routes to reach the end point. Multiple switches, cables routes to get to the same place. </p>
+             </blockquote>
+
+		 </div>
+
+<!-- Advantages and disadvantages of it.-->
+		 
+		 <div id="iprouting" class="row">
+		      <div  class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			     <H2 id="adv">ADVANTAGES</H2>
+				 <span>If one route is slow, then we can go around and take another. 
+				 One wire can accommodate not only my messages but also other peoples'.
+				 </span>
+			  </div>
+			  <div  class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			     <H2 id="disadv">DISADVANTAGES</H2>
+				 <span>
+				 These things get corrupted, things arrive out of sequence, duplicate themselves, get lost completely. 
+				 </span>
+			  </div>
+		 </div>
+
+<!-- IP is best-effort delivery.-->
+		 
+	     <div  class="row">
+	         <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	             <h2 id= "protocol2"><em>IP</em> is best-effort-delivery(?)</h2>
+	         </div>
+	     </div>
+		 
+		 <div id="delivery" class="container">
+		     <ul>
+			     <li>False hardware or software, delays can mess up with the performance of <em>IP</em> routing.</li>
+				 <li> <span class="glyphicon glyphicon-chevron-down"></span></li>
+				 <li><em>IP</em> can't guarantee the wholeness or overall transport of the information.</li>
+				 <li> <span class="glyphicon glyphicon-chevron-down"></span></li>
+				 <li><em>TCP</em> sits on the server and takes the responsibility to pull 
+				 the packets off of IP and make sense of them, the header carries their
+				 sequence. It can reach back out and request to send that lost bit again. One
+				 out of the whole package. It can also refuse to accept or wait anymore for the bits, drop connection.</li>
+			 </ul>
+			 <h2 id= "protocol2"> Domain names (<em>DNS</em>)</h2>
+			 <p>
+			 Map from one of the <em>IP</em> addresses to a domain name. When one types a <em>URL</em> into a browser, 
+			 browser will look internally and tell if it had been to the website before. If it finds nothing, 
+			 it will reach to a domain name server (there are thousands, like a phonebook) and issues a query. 
+			 That's how one reaches from a domain name to an <em>IP</em>. There are thousands of servers on the internet 
+			 that communicate between themselves if some domains move between different <em>IP</em> addresses.
+			 </p>
+		 
+		 </div>
+
+<!-- How a web request is made.-->
+		 
+		 <div  class="row">
+	         <div id="par8th" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	             <h2 id= "protocol2">WEB REQUEST</h2>
+	         </div>
+	     </div>
+		 
+		  <div id="par9th" class="row">
+	         <div  class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			  <ul>
+			         <li>Client makes a request.</li>
+					 <li>Client makes a <em>DNS</em> query “Where is something.com”, which the <em>DNS</em> server doesn't find cached or anything.</li>
+					 <li><em>DNS</em> server looks up and responds with an <em>IP</em> address saying: "It's at <em>IP</em> address something"</li>
+					 <li><em>TCP</em> connection established (2-way)</li>
+					 <li>Protocol-specific request</li>
+			 </ul>					
+			 </div>
+			 <div  class="col-lg-1 col-md-0 col-sm-0 col-xs-0"> </div>
+	            	             
+           	 <div  class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+			       <img id="internet" class="img-responsive" src="imgs/request.png">
+			 </div>
+	     
+		 
+		 
+		 </div>
+	
+  
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	  <script src="myJs.js"></script>
+	  <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+</body>
+</html>

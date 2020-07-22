@@ -1,0 +1,393 @@
+<?php
+if (isset($_GET["pocket"];)){
+$NAME = $_GET["pocket"];
+}
+?>
+<html>
+
+     <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <title>Web made easy</title>
+		 <meta name="viewport" content="width = device-width, initial-scale = 1">
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		 <link rel="stylesheet" type="text/css" href="main.css">
+		 <link rel="stylesheet" type="text/css" href="normalise.css">
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	 </head>
+<body>
+
+<!--Fixed navigation bar on top of the page.-->
+
+<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">CSC1026</a>
+    </div>
+    <ul class="nav navbar-nav">
+	  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TOPICS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="history.html">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">TESTS <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#history-1">History</a></li>
+          <li><a href="#">Design</a></li>
+          <li><a href="htmlcss.html#cssHtmlMenu">CSS/HTML</a></li>
+		  <li><a href="#">JavaScript</a></li>
+        </ul>
+      </li>
+      <li><a href="reviewboard.html">REVIEW BOARD</a></li>
+	  <li><input id="readingTest" onclick="readingTest()" type='button' value='' /></li>
+	  <li><input id="pause" onclick="pause()" type='button' value='' /></li>
+    </ul>
+  </div>
+</nav>
+
+<!--History tests.-->
+
+    <div id="history1menu">
+     <h2 id="history-1">HISTORY</h2>      
+     </div>
+	 
+	 <div id="historycontainer" class="container-fluid">
+	     <div  class="row">
+	   
+	       <div id="history-test1" class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+		    <div id="div1" > <div id="text2"></div></div>
+			
+			<!--Test 1 form.-->
+			
+             <h3>TEST 1</h3>
+			 <h4> Finish the text </h4>
+			 <form name="test1" method="post" action="" onsubmit="return calculate()">
+                <div id="text">
+					  <p>A common allegory to explain how Net works 
+					  is a <input type="text" name="packet"> with a <input type="text" name="postcard"> 
+					  that has an <input type="text" name="address"> on it. 
+					  In reality the Net is a seemingly impossibly arranged network of <input type="text" name="cables">.
+					  The Web is an <input type="text" name="inanimate"> space, in which <input type="text" name="hypertext"> links replace cable 
+					  connections. It is wholly dependent on the <input type="text" name="net">.</p>
+<p>One of the first trials at a World Wide Web was the <input type="text" name="memex"> machine. Its main problem,
+ however, was a lack of an actual implemented hypertext system.</p>
+ <span><input type="text" name="janet"> - a big <input type="text" name="pipe">- was what connected a lot of universities to the internet back in the days.
+ </span>
+<p>Tim Berners Lee was the guy that came up with the idea of the so-called <input type="text" name="worldwideweb">. The application
+ was copyright to <input type="text" name="cern"> and many <input type="text" name="universities">used it for free, thus it spread. However, Netscape
+ and Microsoft decided to commercialise Lee's idea and many <input type="text" name="websites"> started <input type="text" name="rendering"> it badly.</p>
+<p>Web nowadays is comprised of 4 faculties: <input type="text" name="academic"> web, <input type="text" name="commercial"> web, <input type="text" name="social"> web and 
+the <input type="text" name="creative"> web. The last one has a field called 'Open APIs', in which the city of Newcastle has
+ its prided <input type="text" name="urban"> observatory. The future of the web lies mainly in <input type="text" name="cloud"> computing. The so-called
+ <input type="text" name="semantic"> web will be responsible for simplifying information and implementing specific <input type="text" name="machinery">
+ to fetch information to the user.</p>
+<p>The 60 <input type="text" name="hudson"> street is known as the most intensive networking facility in the world, mostly 
+because of its close proximity to <input type="text" name="wallstreet">, in which <input type="text" name="stock"> exchanges take place and where
+ <input type="text" name="algorithmic"> trading is getting excessively popular. Company called Knight Capital managed 
+ to lose almost half a billion dollars because their algorithm was doing the <input type="text" name="opposite"> to what 
+ it should have.</p><div class="submitcontain">
+<input class="submit" type="submit" value="SUBMIT"></div>
+                </div>
+             </form>
+			 
+	         </div>
+			 <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12"></div>
+	         <div id="history-test2" class="col-lg-5 col-md-12 col-sm-12 col-xs-12"> 
+			 <div id="div2" > <div id="text3"></div></div>
+			 
+			 <!--Test 2 form.-->
+			 
+		     <h3>TEST 2</h3>
+			 <h4> Complete the test </h4>
+			 <form name="test2" method="post" action="" onsubmit="return calculate2();">
+
+				   <fieldset>
+				     <p> The way of sending commands to a remote server. Useful for
+				 being able to deploy websites, interact with web services or other remote resources:
+				  <select name="ssh">
+                     <option value="smtp">SMTP</option>
+                     <option value="imap">IMAP</option>
+                     <option value="pop">POP</option>
+                     <option value="ssh">SSH</option>
+                  </select> </p>
+				     
+					 <p>
+					  IP is used for:
+				  <select name="physicalnetwork">
+                     <option value="remote login">Remote login</option>
+                     <option value="email services">Email services</option>
+                     <option value="web">Web</option>
+                     <option value="physical network">Physical network</option>
+                  </select>
+					 </p>
+					 
+					 <p>
+					   File Transfer Protocol is used for:
+				 <select name="networkutility">
+                     <option value="network utility">Network utility</option>
+                     <option value="usenet">Usenet</option>
+                     <option value="coordination">Coordination</option>
+                     <option value="email services">Email services</option>
+                  </select>
+					 </p>
+					 </fieldset>
+					 <fieldset>
+					     <p>
+					     IP is <input type="text" name="best-effort-delivery">, therefore it does
+						 not guarantee that the transmitting of information will have 100% accuracy.
+						 One benefit of it is, however, that it operates without constant 
+						 <input type="text" name="connection">. That also has its setbacks. Packets can
+						 easily get <input type="text" name="corrupted">, arrive out of <input type="text" name="sequence">
+						 or get <input type="text" name="lost"> completely. TCP can also choose to 
+						 <input type="text" name="drop">
+						 connection if it's made to wait too long.
+						 </p>
+					 </fieldset>
+					 
+					     <p>
+					     The correct web request sequence is:<br>
+						 <input TYPE="radio" NAME="q1" value="correct" id="correct">
+						     <ul class="testradio">
+							     <li>Client makes request</li>
+								 <li>Client makes a DNS query</li>
+								 <li>DNS server looks up and responds</li>
+								 <li>TCP connection established</li>
+								 <li>Protocol-specific request</li>
+								 <li>Protocol-specific response</li>
+								 <li>Client processes and handles response</li>
+							 </ul>
+						 </input>
+						 </p>
+						 <p>
+						 <input TYPE="radio" NAME="q1" value="incorrect">
+						     <ul class="testradio">
+							     <li>Client makes a DNS query</li>
+							     <li>Client makes request</li>								 
+								 <li>DNS server looks up and responds</li>
+								 <li>Protocol-specific request</li>
+								 <li>TCP connection established</li>								 
+								 <li>Protocol-specific response</li>
+								 <li>Client processes and handles response</li>
+							 </ul>
+						 </input>
+						 </p>
+						 <p>
+						 <input TYPE="radio" NAME="q1" value="incorrect2">
+						     <ul class="testradio">
+							     <li>Client makes request</li>
+								 <li>Client makes a DNS query</li>
+								 <li>TCP connection established</li>
+								 <li>DNS server looks up and responds</li>
+								 <li>Client processes and handles response</li>								 
+								 <li>Protocol-specific request</li>
+								 <li>Protocol-specific response</li>
+								 
+							 </ul>
+						 </input></p>
+  
+				 <div class="submitcontain">
+                 <input id="submittest2" class="submit" type="submit" value="SUBMIT"></div>
+			
+			         </form>
+			     </div>
+			 
+		     </div>
+		 
+        </div> 
+		
+		 
+ <!--CSS/HTML section tests.-->
+		 
+	<div id="cssHtmlMenu">
+              <h2 id="css-1">CSS/HTML</h2>      
+          </div>
+		  
+	<div  class="container-fluid">
+	     <div  class="row">
+		     <div id="cssContainer" class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+			 <div id="div3" > <div id="text4"></div></div>
+			 
+			 <!--Test 1 form.-->
+			 
+		     <h3>TEST 1</h3>
+			 <h4> Complete the test </h4>
+			 <form name="test3" method="post" action="" onsubmit="return calculate3();">
+
+				  
+				     <p> What is the &lt;a&gt; tag used for?
+				  <select name="link">
+                     <option value="smtp">Drawing a line</option>
+                     <option value="imap">Starting a table</option>
+                     <option value="link">Making a link</option>
+                     <option value="ssh">Quoting</option>
+                  </select> </p>
+				     
+					 <p>
+					  What is the &lt;form&gt; tag used for?
+				  <select name="form">
+                     <option value="remote login">Making a link</option>
+                     <option value="email services">Posting an image</option>
+                     <option value="web">Bolding the text</option>
+                     <option value="form">Making a user form</option>
+                  </select>
+					 </p>
+					 
+					 <p>
+					  What is the &lt;hr&gt; tag used for?
+				 <select name="line">
+                     <option value="network utility">Making a box</option>
+                     <option value="usenet">Making a paragraph</option>
+                     <option value="line">Drawing a line</option>
+                     <option value="email services">Making a link</option>
+                  </select>
+					 </p>
+					
+				
+					     <p>
+					     Clear structure of HTML is <input type="text" name="mandatory">, because you lack
+						 control you'd have were you handling a <input type="text" name="printed"> document.
+						 One of the main features of clean HTML is <input type="text" name="consistent"> rendering
+						 through browsers, the other is a personal one, making the creator more efficient when it
+						 comes to <input type="text" name="editing"> his/her code.
+						 </p>
+						 <p>
+						 DTDs are useful, because they tell you which <input type="text" name="tags"> can be used and
+						 it even foresees how browsers are supposed to <input type="text" name="render"> the code.		 
+						 </p>
+						 <p>
+						 HTML document is made out of 3 parts (top to bottom): a line, containing <input type="text" name="htmlversion">
+						 information, a <input type="text" name="header"> and a <input type="text" name="body">.</p>
+					
+					 
+					     <p>
+					     Block-level tags:<br>
+						 <input TYPE="radio" NAME="q1" value="correct" >
+						     <ul class="testradio">
+							     <li>Does not add new lines</li>
+								 <li>Define blocks of content</li>
+								 <li>Default width and heigth</li>
+							 </ul>
+						 </input>
+						 </p>
+						 <p>
+						 <input TYPE="radio" NAME="q1" value="correct" id="correct2">
+						     <ul class="testradio">
+							     <li>Define blocks of content</li>
+							     <li>Browser adds a line above and below</li>								 
+								 <li>Default width and heigth</li>
+							 </ul>
+						 </input>
+						 </p>
+						 <p>
+						 <input TYPE="radio" NAME="q1" value="incorrect2">
+						     <ul class="testradio">
+							     <li>Defines blocks of content</li>
+								 <li>Browser adds a line above and below</li>
+								 <li>Has to be nested as an inline tag</li>
+								 
+							 </ul>
+						 </input></p>
+  
+				        <div class="submitcontain">
+                        <input id="submittest2" class="submit" type="submit" value="SUBMIT"></div>
+			
+			          </form>
+			
+<!--Test 1 form end.-->
+		 
+			     </div>
+		     </div>
+		 
+        </div> 
+		 
+		 
+	
+	<!--Script for "Test 1" and "Test 2" sections become fixed reacting to user's scrolling position.-->
+	
+	  <script>
+	   var fixhistory = $('#history1menu').offset().top;
+       var fixmenu = $('#cssHtmlMenu').offset().top; 	   
+	 
+	   var x=0;
+	   var y=0;
+	   
+         $(window).scroll(function() {                  // assign scroll event listener
+            
+            var currentScroll = $(window).scrollTop(); // get current position
+            if (currentScroll >= fixhistory && currentScroll < fixmenu) {
+				// apply position: fixed if you
+                 $('#history1menu').css({ 			 // scroll to that element or below it
+                 position: 'fixed',
+                 top: '50px',
+                 left: '0',
+				'box-shadow': '0px 10px 10px #888',
+                '-moz-box-shadow' : '0px 10px 10px #888',
+                '-webkit-box-shadow' : '0px 10px 10px #888'                				 
+             });
+			 y=1;
+            } if(x==1) {
+			    $('#cssHtmlMenu').css({                      // if you scroll above it
+                position: 'static',
+				'box-shadow': 'none',
+                '-moz-box-shadow' : 'none',
+                '-webkit-box-shadow' : 'none'
+                });
+				x=0;
+			 }
+			 
+			 if(currentScroll < fixhistory){
+			     $('#history1menu').css({                      // if you scroll above it
+                  position: 'relative',
+				  top:'70px',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });
+				 
+				 $('#cssHtmlMenu').css({                      // if you scroll above it
+                  position: 'static',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });				
+			
+		}
+
+        if(currentScroll >= fixmenu){                                   // apply position: static
+                 if(y==1) {
+				  $('#history1menu').css({                      // if you scroll above it
+                  position: 'static',
+                  'box-shadow': 'none',
+                  '-moz-box-shadow' : 'none',
+                  '-webkit-box-shadow' : 'none'				  
+                 });
+				 y=0;
+				 }
+				
+                      // apply position: fixed if you
+				 
+				 $('#cssHtmlMenu').css({                      // scroll to that element or below it
+                 position: 'fixed',
+                 top: '50px',
+                 left: '0',
+				 'box-shadow': '0px 10px 10px #888',
+                 '-moz-box-shadow' : '0px 10px 10px #888',
+                 '-webkit-box-shadow' : '0px 10px 10px #888'
+                });
+				x=1;
+			  
+            }		
+			 
+		});	
+	  </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   <script src="myJs.js"></script>
+	    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+</body>
+</html>

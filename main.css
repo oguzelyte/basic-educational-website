@@ -1,0 +1,916 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   
+   /*
+     Specify the index page's slides.
+   */
+   
+.slide1{
+  background-image: url("imgs/webdesign.jpg");
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 2;
+}
+.slide2{
+  background-image: url('imgs/codecademy.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url('imgs/techniques.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+     Specify the hudson slides in history.html file
+   */
+   
+.hudsonSlide1{
+  background-image: url('imgs/60hudson1.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	
+}
+
+.hudsonSlide2{	
+  background-image: url('imgs/60hudson2.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hudsonSlide3{
+  background-image: url('imgs/60hudson3.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	
+}
+
+.hudsonSlide4{
+  background-image: url('imgs/60hudson4.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+	
+}
+
+.hudsonSlide5{
+  background-image: url('imgs/60hudson5.jpg');
+  height: 380px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;	
+}
+
+/*
+     Enlarge font in carousel
+   */
+   
+.carousel-caption h2{
+  font-size: 4em;
+  /*font-family: 'Pacifico', cursive;*/
+}
+
+.carousel-caption p{
+  font-size: 2em;
+}
+
+/*
+     Do custom necessary page design css.
+   */
+   
+#indexRow{
+  padding-top: 50px;
+  font-size: 1.3em;
+  text-align: justify; 
+}
+
+div > div >  img.img-responsive {
+  padding-right: 20px;
+  padding-top: 5px;
+  
+}
+
+#contain{
+ padding-top: 70px;
+}
+
+.contain{ 
+  padding-left: 15px;
+  padding-right: 20px;
+  max-width: 2000px;
+}
+
+.header {
+  height: 80px;
+  margin-top: 32px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+h1{
+	text-align: center;
+	margin-top: 32px;
+	margin-bottom: 40px;
+}
+#menu {
+  background-color: #323c46;
+  border-color:transparent;
+}
+
+.navbar-default .navbar-nav>li>a{
+  color: white;
+}
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+body {
+  /*margin: 10px;*/
+}
+
+.row h4, #interneth2 {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.header h1 {
+  padding-top: 50px;
+  font-weight: bold;
+}
+.header span{
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+em {
+  color: rgb(0, 153, 51);
+}
+
+#internet {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#schmidt {
+  color: white;
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 300px; 
+  width: 600px;
+  overflow:hidden;
+}
+
+#schmidt > footer{
+  color: white;
+  overflow:hidden;
+}
+
+#petroski {
+  color: white;
+  float: left;
+  position: absolute;
+  left: 10px;
+  top: 370px; 
+  width: 600px;
+  overflow:hidden;
+}
+
+#petroski > footer{
+  color: white;
+  overflow:hidden;
+}
+
+
+#internetContainer {
+  position: relative;
+  margin: auto;
+}
+
+#historyNav {
+  text-align: center;
+  border-radius:0px;
+  border-color:transparent;
+  margin: 0px;
+  background-color: rgb(0, 102, 0);
+}
+
+/*
+     This is the css for the items that change from static to fixed.
+   */
+   
+#lesson1menu, #lesson3menu, #lesson2menu , #lessons, #lesson1css, #lesson2css{
+  height: 50px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: rgb(217, 217, 217);
+  position: relative;
+  z-index:10;
+  width:100%;
+}
+.fixed {
+    position:fixed;
+    top:0;
+}
+#lesson1menu > h2,#lesson2menu > h2,#lesson3menu > h2 , #lessons >h2, #history-1, #lesson1css > h2, #lesson2css>h2, #css-1{
+  margin-top:0px;
+  margin-bottom:0px;
+  font-weight: bold;
+}
+
+#lesson1, #lesson2, #lesson3 {
+  border-style: solid;
+  border-color: #323c46;
+  color: #323c46;
+  display: inline-block;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 80px;
+}
+#lesson1, #lesson2{
+  margin-right: 40px;
+}
+#historyLessons, #htmlLessons{
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 20px;
+  overflow: hidden
+}
+
+div#lessons.lesson1{
+  padding-bottom: 30px;
+}
+
+#web-lesson > p, #memex, #hudstr >p{
+  padding-left:70px;
+  padding-right:70px;
+  font-size: 1.4em;
+  text-align: justify;
+  padding-bottom: 40px;
+  
+}
+#web-lesson > h2 , #Memex, #protocol, #hudstr > h2{
+  padding-top: 40px;
+  padding-left:30px;
+  padding-bottom:40px;
+}
+
+#protocol2{
+  padding-top: 40px;
+  padding-bottom:40px;
+}
+
+
+#lee {
+  margin-top: 50px;
+  text-align: justify;
+  margin-left: 5px;
+}
+
+.blockquote-footer{
+  color: rgb(0, 153, 51);
+}
+
+#blumDiv{
+  margin-top: 50px;
+}
+
+/*
+     Changes tables' on history.html and htmlcss.html color when hovered on.
+   */
+   
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgb(0, 153, 51);
+
+}
+
+/*
+     Aligns an image in history.html when user shrinks window.
+   */
+   
+@media (max-width: 1200px) {
+  
+#memexImg{
+  text-align: center;
+}
+
+}
+div#table.container{
+  padding-top:50px;
+  font-size: 1.4em;
+}
+ 
+th, #3internetblocks {
+  font-size: 1.4em;
+}
+
+
+.expand{
+    position: relative;
+}
+
+.tooltiptext{
+  display:none;
+  position:absolute; 
+  z-index:100;
+  border:1px;
+  background-color:white;
+  border-style:solid;
+  border-width:2px;
+  border-color:black;
+  padding:3px;
+  color:black; 
+  top:-30px; 
+  left:20px;
+}
+
+.expand:hover span.tooltiptext {
+  display:block;
+}
+
+#table-explanation, #table-explanation1{
+  padding-left:20px;
+  padding-right:20px;
+  padding-top: 40px;
+  text-align: justify;
+  font-size: 1.4em;
+}
+
+#table-explanation-part {
+  padding-bottom: 30px;
+}
+
+.second-level-list{
+  list-style-type:disc;
+}
+
+/*
+     Adds paragraph spacing in lists.
+   */
+   
+.webnow li, ul.internetblocks>li, #protocols > div > ul > li, #delivery > ul >li, div> div> ul>li, #cssContainer>form>ul>li, #cssContainer>form>p, #history-test2 > form > ul > li{
+   margin: 15px 0;
+}  
+
+#cssContainer{
+  font-size: 1.3em;
+}
+
+p.internetblocks{
+   font-size: 1.6em;
+   margin-right: 20px;
+   margin-left: 20px;
+   text-align: justify;
+ }
+
+ ul.internetblocks{
+   margin: 10px 0;
+   font-size: 1.2em;
+   margin-right: 20px;
+   margin-left: 20px;
+   text-align: justify; 	 
+ }
+ 
+ .internetscroll{
+   padding-bottom:50px;
+ }
+ 
+ div#60block.row, #sshcmds{
+   margin-top:70px;
+ }
+ 
+ #protocols, #tcp, div>div>span, #delivery >ul>li, #delivery> p, #par9th{
+	 font-size:1.4em;
+ }
+ 
+ div#protocols.row{
+	 padding-bottom: 50px;
+ }
+ 
+ div > div > h3 {
+	 text-align: center;
+	 font-weight: bold;
+ }
+ 
+ .row{
+  margin-right:20px;
+  margin-left:20px;
+ }
+ 
+ #routing{
+	 padding-top: 50px;
+ }
+ 
+ #iprouting > div > h2{
+	 text-align: center;
+	 text-decoration: underline;
+ }
+ 
+  div > h2, #iprouting>div, #delivery > ul >li{
+	 text-align: center; 
+  }
+  
+  #adv{
+	  color:rgb(0, 153, 51);
+  }
+  
+  #disadv{
+	  color:red;
+  }
+  
+  #delivery > ul{
+	  list-style-type: none;
+  }
+ 
+ /*
+     Changes size of bootstrap's glyphicon.
+   */
+   
+   .glyphicon.glyphicon-chevron-down{
+	   font-size: 40px;
+   }
+   #delivery{
+	   text-align:center;
+   }
+   
+   #tcp > div> ul, .testradio, #par9th>div>ul>li{
+	   list-style-type: decimal;
+   }
+   
+#history1menu, #cssHtmlMenu{
+  top: 70px; 
+  height: 50px;
+  text-align: center;
+  background-color: rgb(217, 217, 217);
+  position: relative;
+  z-index:10;
+  width:100%;  
+}
+
+#history-1, #css-1{
+  padding-top: 10px;
+}
+
+#history-test1, #history-test2, #cssContainer{
+  border-style: solid;
+  display: inline-block;
+  margin-bottom: 60px;
+  overflow: auto;
+}
+
+#cssContainer  >h3 {
+  background-color: rgb(0, 153, 51);
+}
+#history-test1 > #div1, #history-test2 > #div2, #cssContainer > #div3 {
+  width:100%;
+  height:100%;
+  display:none;
+  background-color:rgb(0, 153, 51);
+  position: absolute;
+  left:-0.1px;
+  color: white;
+  text-align: center;
+  font-size: 9em;
+  vertical-align: middle;
+}
+
+#text2, #text3, #text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+
+#historycontainer{
+  position: relative;
+  top: 200px;
+  padding-bottom: 150px;
+}
+
+ #cssContainer{
+    position: relative;
+  top: 200px; 
+ }
+
+#historycontainer >div>div>h3, #cssContainer>div>div>h3{
+  background-color: rgb(0, 153, 51);
+}
+#historycontainer >div>div>h4, #cssContainer>div>div>h4{
+  padding-top: 20px;
+}
+input{
+width: 70px;
+}
+
+/*
+     Changes input box's default design.
+   */
+   
+input[type=text] {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #000000;
+	outline: none;
+}
+
+
+
+#text>p, #text>span, #history-test2{
+  font-size:1.3em;
+}
+
+.submit{
+  background-color: rgb(0, 153, 51);
+  border: none;
+  text-decoration: none;
+  width:100px;
+  height: 30px;
+  font-size:1.2em;
+  font-weight: 700;
+}
+
+.submitcontain{
+  padding-top:10px;
+  text-align: center;
+  padding-bottom:10px;
+}
+
+#submittest2{
+  font-size:17px;
+}
+
+/*
+     The css for buttons for text-to-speech.
+   */
+   
+#reading, #readingIndex, #readingTest, #readingCss{
+  margin-top:10px;
+  margin-left: 10px;
+  width:40px;
+  height:32px;
+  background-color: #323c46;
+  border-style: solid;
+  border-width: 2px;
+  border-style: white;
+  border-color: white;
+  text-decoration: none;
+  font-size:1.2em;
+  font-weight: 700;
+  background-image: url('icons/speaker.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 25px;
+}
+
+/*
+     Css for pause buttons to text-to-speech.
+   */
+   
+#pause{
+  margin-top:10px;
+  margin-left: 10px;
+  width:40px;
+  height:32px;
+  background-color: #323c46;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  text-decoration: none;
+  font-size:1.2em;
+  font-weight: 700;
+  background-image: url('icons/pause-outlined-big-symbol.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 21px 21px;
+  display: none;
+}
+
+/*
+     Css for reviewboard.html's divs, containing user-specified messages.
+   */
+   
+#review{
+  position: relative;
+  top: 100px;
+}
+
+.review{
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.review_item{
+  border-top: 3px solid;
+  border-color: rgb(0, 153, 51);
+  margin-bottom: 10px;
+  padding: 5px;
+  overflow:hidden;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
